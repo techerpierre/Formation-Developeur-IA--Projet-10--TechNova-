@@ -1,0 +1,22 @@
+[project]
+name = "tech-nova"
+version = "0.1.0"
+description = ""
+readme = "README.md"
+authors = [
+    { name = "Pierre Techer", email = "techerpierre.pro@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+tech-nova = "tech_nova:main"
+
+[build-system]
+requires = ["uv_build>=0.12.14,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "jupyterlab>=4.6.6",
+]
